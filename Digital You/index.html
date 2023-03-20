@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital You</title>
+    <!-- ------------------Bootsrap---------- -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+    <!-- ----------------------CSS------------- -->
+    <link rel="stylesheet" href="estilo.css?ver=1.0.1"/>
+
+    <!-- ----------------Required Links---------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97350da7f1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/logo_1.svg">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<section id="hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 contenedor-res">
+                <svg width="200" height="49" viewBox="0 0 200 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60.7517 14.2886C62.7204 14.2886 64.4474 14.6734 65.9329 15.443C67.4362 16.2125 68.5906 17.3132 69.396 18.745C70.2192 20.1588 70.6309 21.8054 70.6309 23.6846C70.6309 25.5638 70.2192 27.2103 69.396 28.6242C68.5906 30.0201 67.4362 31.1029 65.9329 31.8725C64.4474 32.6421 62.7204 33.0269 60.7517 33.0269H54.2013V14.2886H60.7517ZM60.6174 29.8322C62.5861 29.8322 64.1074 29.2953 65.1812 28.2215C66.255 27.1477 66.7919 25.6354 66.7919 23.6846C66.7919 21.7338 66.255 20.2125 65.1812 19.1208C64.1074 18.0112 62.5861 17.4564 60.6174 17.4564H57.9597V29.8322H60.6174ZM75.3502 16.3826C74.6881 16.3826 74.1332 16.1767 73.6858 15.7651C73.2563 15.3356 73.0415 14.8076 73.0415 14.1812C73.0415 13.5548 73.2563 13.0358 73.6858 12.6242C74.1332 12.1946 74.6881 11.9799 75.3502 11.9799C76.0124 11.9799 76.5583 12.1946 76.9878 12.6242C77.4353 13.0358 77.659 13.5548 77.659 14.1812C77.659 14.8076 77.4353 15.3356 76.9878 15.7651C76.5583 16.1767 76.0124 16.3826 75.3502 16.3826ZM77.2026 18.1544V33.0269H73.4442V18.1544H77.2026ZM86.7414 17.9128C87.851 17.9128 88.8264 18.1365 89.6676 18.5839C90.5087 19.0134 91.1709 19.5772 91.6541 20.2752V18.1544H95.4394V33.1342C95.4394 34.5123 95.162 35.7383 94.6072 36.8121C94.0524 37.9038 93.2201 38.7629 92.1105 39.3893C91.0009 40.0336 89.6586 40.3557 88.0837 40.3557C85.9718 40.3557 84.2358 39.8635 82.8756 38.8792C81.5333 37.8949 80.7727 36.5526 80.5937 34.8524H84.3253C84.5222 35.5324 84.9427 36.0694 85.587 36.4631C86.2492 36.8747 87.0456 37.0805 87.9763 37.0805C89.068 37.0805 89.9539 36.7495 90.634 36.0873C91.3141 35.443 91.6541 34.4586 91.6541 33.1342V30.8255C91.1709 31.5235 90.4998 32.1052 89.6407 32.5705C88.7996 33.0358 87.8331 33.2685 86.7414 33.2685C85.4886 33.2685 84.3432 32.9463 83.3052 32.302C82.2671 31.6577 81.4439 30.7539 80.8354 29.5906C80.2448 28.4094 79.9495 27.0582 79.9495 25.5369C79.9495 24.0336 80.2448 22.7002 80.8354 21.5369C81.4439 20.3736 82.2582 19.4788 83.2783 18.8524C84.3163 18.226 85.4707 17.9128 86.7414 17.9128ZM91.6541 25.5906C91.6541 24.6779 91.4752 23.8993 91.1172 23.255C90.7593 22.5929 90.2761 22.0917 89.6676 21.7517C89.0591 21.3937 88.4058 21.2148 87.7078 21.2148C87.0099 21.2148 86.3656 21.3848 85.775 21.7248C85.1844 22.0649 84.7011 22.566 84.3253 23.2282C83.9673 23.8725 83.7884 24.6421 83.7884 25.5369C83.7884 26.4318 83.9673 27.2192 84.3253 27.8993C84.7011 28.5615 85.1844 29.0716 85.775 29.4295C86.3835 29.7875 87.0278 29.9665 87.7078 29.9665C88.4058 29.9665 89.0591 29.7964 89.6676 29.4564C90.2761 29.0984 90.7593 28.5973 91.1172 27.953C91.4752 27.2908 91.6541 26.5034 91.6541 25.5906ZM101.016 16.3826C100.354 16.3826 99.7991 16.1767 99.3517 15.7651C98.9222 15.3356 98.7074 14.8076 98.7074 14.1812C98.7074 13.5548 98.9222 13.0358 99.3517 12.6242C99.7991 12.1946 100.354 11.9799 101.016 11.9799C101.678 11.9799 102.224 12.1946 102.654 12.6242C103.101 13.0358 103.325 13.5548 103.325 14.1812C103.325 14.8076 103.101 15.3356 102.654 15.7651C102.224 16.1767 101.678 16.3826 101.016 16.3826ZM102.868 18.1544V33.0269H99.1101V18.1544H102.868ZM110.958 21.2416V28.4363C110.958 28.9374 111.074 29.3043 111.307 29.5369C111.557 29.7517 111.969 29.8591 112.542 29.8591H114.286V33.0269H111.924C108.756 33.0269 107.172 31.4877 107.172 28.4094V21.2416H105.401V18.1544H107.172V14.4765H110.958V18.1544H114.286V21.2416H110.958ZM116.023 25.5369C116.023 24.0336 116.319 22.7002 116.909 21.5369C117.518 20.3736 118.332 19.4788 119.352 18.8524C120.39 18.226 121.545 17.9128 122.815 17.9128C123.925 17.9128 124.891 18.1365 125.715 18.5839C126.556 19.0313 127.227 19.5951 127.728 20.2752V18.1544H131.513V33.0269H127.728V30.8524C127.245 31.5503 126.574 32.132 125.715 32.5973C124.873 33.0448 123.898 33.2685 122.788 33.2685C121.536 33.2685 120.39 32.9463 119.352 32.302C118.332 31.6577 117.518 30.7539 116.909 29.5906C116.319 28.4094 116.023 27.0582 116.023 25.5369ZM127.728 25.5906C127.728 24.6779 127.549 23.8993 127.191 23.255C126.833 22.5929 126.35 22.0917 125.741 21.7517C125.133 21.3937 124.48 21.2148 123.782 21.2148C123.084 21.2148 122.439 21.3848 121.849 21.7248C121.258 22.0649 120.775 22.566 120.399 23.2282C120.041 23.8725 119.862 24.6421 119.862 25.5369C119.862 26.4318 120.041 27.2192 120.399 27.8993C120.775 28.5615 121.258 29.0716 121.849 29.4295C122.457 29.7875 123.102 29.9665 123.782 29.9665C124.48 29.9665 125.133 29.7964 125.741 29.4564C126.35 29.0984 126.833 28.5973 127.191 27.953C127.549 27.2908 127.728 26.5034 127.728 25.5906ZM138.942 13.1611V33.0269H135.184V13.1611H138.942ZM163.952 14.2886L157.616 26.5034V33.0269H153.858V26.5034L147.495 14.2886H151.737L155.764 22.8524L159.764 14.2886H163.952ZM172.723 33.2685C171.292 33.2685 170.003 32.9553 168.858 32.3289C167.712 31.6846 166.808 30.7808 166.146 29.6175C165.502 28.4541 165.18 27.1119 165.18 25.5906C165.18 24.0694 165.511 22.7271 166.173 21.5638C166.853 20.4005 167.775 19.5056 168.938 18.8792C170.101 18.2349 171.399 17.9128 172.831 17.9128C174.263 17.9128 175.56 18.2349 176.723 18.8792C177.887 19.5056 178.799 20.4005 179.462 21.5638C180.142 22.7271 180.482 24.0694 180.482 25.5906C180.482 27.1119 180.133 28.4541 179.435 29.6175C178.755 30.7808 177.824 31.6846 176.643 32.3289C175.48 32.9553 174.173 33.2685 172.723 33.2685ZM172.723 29.9933C173.403 29.9933 174.039 29.8322 174.629 29.5101C175.238 29.17 175.721 28.6689 176.079 28.0067C176.437 27.3445 176.616 26.5392 176.616 25.5906C176.616 24.1767 176.24 23.094 175.488 22.3423C174.755 21.5727 173.851 21.1879 172.777 21.1879C171.703 21.1879 170.799 21.5727 170.066 22.3423C169.35 23.094 168.992 24.1767 168.992 25.5906C168.992 27.0045 169.341 28.0962 170.039 28.8658C170.755 29.6175 171.65 29.9933 172.723 29.9933ZM197.279 18.1544V33.0269H193.494V31.1477C193.01 31.792 192.375 32.302 191.588 32.6779C190.818 33.0358 189.977 33.2148 189.064 33.2148C187.901 33.2148 186.872 32.9732 185.977 32.4899C185.082 31.9888 184.375 31.264 183.856 30.3154C183.355 29.349 183.104 28.2036 183.104 26.8792V18.1544H186.863V26.3423C186.863 27.5235 187.158 28.4363 187.749 29.0805C188.339 29.7069 189.145 30.0201 190.165 30.0201C191.203 30.0201 192.017 29.7069 192.608 29.0805C193.198 28.4363 193.494 27.5235 193.494 26.3423V18.1544H197.279Z" fill="black"/>
+                    <path opacity="0.6" d="M19.4869 4.87173C22.1775 2.18115 26.5398 2.18115 29.2304 4.87173L43.8455 19.4869C46.5361 22.1775 46.5361 26.5398 43.8455 29.2304L29.2304 43.8456C26.5398 46.5361 22.1775 46.5361 19.4869 43.8456L4.87172 29.2304C2.18113 26.5398 2.18114 22.1775 4.87172 19.4869L19.4869 4.87173Z" fill="url(#paint0_linear_108_31)"/>
+                    <path opacity="0.6" d="M7.13447 14.0242C7.13447 10.2191 10.2191 7.13452 14.0241 7.13452H34.6931C38.4982 7.13452 41.5828 10.2191 41.5828 14.0242V34.6932C41.5828 38.4982 38.4982 41.5828 34.6931 41.5828H14.0241C10.2191 41.5828 7.13447 38.4982 7.13447 34.6932V14.0242Z" fill="url(#paint1_linear_108_31)"/>
+                    <path d="M13.2052 18.9466C13.2052 15.7757 15.7757 13.2052 18.9466 13.2052H29.8552C33.0261 13.2052 35.5966 15.7757 35.5966 18.9466V29.8552C35.5966 33.0261 33.0261 35.5966 29.8552 35.5966H18.9466C15.7757 35.5966 13.2052 33.0261 13.2052 29.8552V18.9466Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8078 26.4104C20.442 26.4104 20.9561 26.9245 20.9561 27.5587C20.9561 29.4612 22.4984 31.0035 24.4009 31.0035C26.3034 31.0035 27.8457 29.4612 27.8457 27.5587C27.8457 26.9245 28.3598 26.4104 28.994 26.4104C29.6282 26.4104 30.1423 26.9245 30.1423 27.5587C30.1423 30.7296 27.5718 33.3001 24.4009 33.3001C21.23 33.3001 18.6595 30.7296 18.6595 27.5587C18.6595 26.9245 19.1736 26.4104 19.8078 26.4104Z" fill="#315BAF"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_108_31" x1="12.1793" y1="12.1793" x2="36.538" y2="36.538" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EE79FF"/>
+                            <stop offset="1" stop-color="#6D56F8"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_108_31" x1="24.3586" y1="7.13452" x2="24.3586" y2="41.5828" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#08DEFF"/>
+                            <stop offset="1" stop-color="#2B2EF1"/>
+                        </linearGradient>
+                    </defs>
+                </svg>                
+            <i class="fa-solid fa-bars icono-menu"></i>
+            </div>
+        </div>  
+    </div>
+    <div class="cont-navRes">
+        <div class="navbar-res">
+            <div class="close-menu">
+                <img  class="logo-menu" src="./assets/logo_2.svg" alt="logo_menu">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="list"><a href="#hero">Home</a></li>
+                    <li class="list"><a href="#use_case">Use Case</a></li>
+                    <li class="list"><a href="#process">Process</a></li>
+                    <li class="list"><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid hero-res">
+        <div class="row">
+            <div class="col-12 heroRes">
+                <div class="capa">
+                    <div class="slider col1 col1-res">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col1_1.png" alt="img1">
+                            </div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_2.png" alt="img2"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_3_n.png" alt="img3"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_4.png" alt="img4"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_3_n.png" alt="img5"></div> 
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col1_1.png" alt="img1">
+                            </div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_2.png" alt="img2"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_3_n.png" alt="img3"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_4.png" alt="img4"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_2.png" alt="img2"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_3_n.png" alt="img3"></div>
+                            <div class="slide"><img class="img-res" src="./assets/hero_img/col1_3_n.png" alt="img5"></div> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="capa">
+                    <div class="slider col2 col2-res">
+                        <div class="slide-track2">
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_1.png" alt="img1">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_2.png" alt="img2">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_3_n.png" alt="img3">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_4.png" alt="img4">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_3_n.png" alt="img5">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_1.png" alt="img1">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_2.png" alt="img2">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_3_n.png" alt="img3">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_4.png" alt="img4">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res2" src="./assets/hero_img/col2_3_n.png" alt="img5">
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <div class="capa">
+                    <div class="slider col4 col4-res">
+                        <div class="slide-track2 slide-trackRes">
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_1.png" alt="img1">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_2.png" alt="img2">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_3_n.png" alt="img3">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_4.png" alt="img4">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_3_n.png" alt="img5">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_1.png" alt="img1">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_2.png" alt="img2">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_3_n.png" alt="img3">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_4.png" alt="img4">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_3_n.png" alt="img5">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_1.png" alt="img1">
+                            </div>
+                            <div class="slide">
+                                <img class="img-res" src="./assets/hero_img/col4_2.png" alt="img2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 encabezado-res">
+                <div class="hero-enc enc-res"><h1>Create your perfect</h1><h1><b class="colored">profile picture</b> with AI.</h1>
+                <p class="p-hero">We use artificial intelligence to generate an image of you that looks perfect and captures who you are.</p>
+                <a href="#" class="btn-hero">Create your pictures</a>
+                <p class="p-hero2">578,400 profile pictures already created</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-nav">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="list"><a href="#hero">Home</a></li>
+                    <li class="list"><a href="#use_case">Use Case</a></li>
+                    <li class="list"><a href="#process">Process</a></li>
+                    <li class="list"><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contenedor-hero">
+        <div class="capa">
+            <div class="slider col1">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./assets/hero_img/col1_1.png" alt="img1">
+                    </div>
+                    <div class="slide"><img src="./assets/hero_img/col1_2.png" alt="img2"></div>
+                    <div class="slide"><img src="./assets/hero_img/col1_3_n.png" alt="img3"></div>
+                    <div class="slide"><img src="./assets/hero_img/col1_4.png" alt="img4"></div>
+                    <div class="slide"><img src="./assets/hero_img/col1_3_n.png" alt="img5"></div> 
+                </div> 
+            </div>
+        </div>
+        <div class="capa">
+            <div class="slider col2">
+                <div class="slide-track2">
+                    <div class="slide">
+                        <img src="./assets/hero_img/col2_1.png" alt="img1">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hero_img/col2_2.png" alt="img2">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hero_img/col2_3_n.png" alt="img3">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hero_img/col2_4.png" alt="img4">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hero_img/col2_3_n.png" alt="img5">
+                    </div>
+                </div>
+            </div>        
+        </div>
+            <div class="encabezado">
+                <div class="logo-hero">
+                    <img  class="logo" src="./assets/logo_1.svg" alt="logo_menu">               
+            </div>
+            <div class="hero-enc"><h1>Create your perfect</h1><h1><b class="colored">profile picture</b> with AI.</h1>
+            <p class="p-hero">We use artificial intelligence to generate an image of you that looks perfect and captures who you are.</p>
+            <a href="#" class="btn-hero">Create your pictures</a>
+            <p class="p-hero2">578,400 profile pictures already created</p>
+            <p class="p-hero2">Starting from <b class="red">$24.99</b></p>
+            </div>
+            <div></div>
+        </div>
+        <div class="capa">
+            <div class="slider col3">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./assets/hero_img/col3_1.png" alt="img1">
+                    </div>
+                    <div class="slide">
+                    <img src="./assets/hero_img/col3_2.png" alt="img2">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col3_3.png" alt="img3">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col3_4_n.png" alt="img4">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col3_3.png" alt="img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="capa">
+        <div class="slider col4">
+            <div class="slide-track2">
+                <div class="slide">
+                    <img src="./assets/hero_img/col4_1.png" alt="img1">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col4_2.png" alt="img2">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col4_3_n.png" alt="img3">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col4_4.png" alt="img4">
+                </div>
+                <div class="slide">
+                    <img src="./assets/hero_img/col4_3_n.png" alt="img5">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="use_case">
+    <div class="container-fluid">
+        <div class="fila1">
+            <div class="col-12 useCase1">
+                <h2>Over <b class="colored">168 styles</b> to choose from</h2>
+                <p>After purchase, we'll create 120 photos in 14 different styles.</p>
+            </div>
+        </div>
+        <div class="row useCase2 sliderU">
+            <div class="col-12 slideU-track">
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_3.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_4.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_6.png" alt="img6">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_3.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_4.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row1_6.png" alt="img6">
+                </div>
+            </div>
+        </div>
+        <div class="row sliderU">
+            <div class="col-12 useCase3 slideU-trackR">
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_3.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_4_n.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_6.png" alt="img6">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_3.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_4_n.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row2_6.png" alt="img6">
+                </div>
+            </div>
+        </div>
+        <div class="row useCase4 sliderU">
+            <div class="col-12 slideU-track">
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_3_n.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_4.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_6.png" alt="img6">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_1.png" alt="img1">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_2.png" alt="img2">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_3_n.png" alt="img3">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_4.png" alt="img4">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_5.png" alt="img5">
+                </div>
+                <div class="slideU">
+                    <img src="./assets/usecases/row3_6.png" alt="img6">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="bundle">
+    <div class="contenedor-bundle">
+        <div class="header-bundle">
+            <h2><b class="colored2">One-time</b> payment.</h2>
+            <h2>Start from <del class="grey">$39.99</del> <b class="colored3">$24.99</b></h2>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-item-center">
+                <div class="gradient-border">
+                    <div class="bundle b1">
+                        <p class="txt-bundle">Bundle #1</p>
+                        <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                        <br>
+                        <p class="contains"><strong>Contains:</strong></p>
+                        <ul class="list-bundle">
+                            <li>20 Profile pictures</li>
+                            <li>20 Profile pictures</li>
+                            <li>20 Profile pictures</li>
+                            <li>20 Profile pictures</li>
+                        </ul>
+                        <a href="#" class="btn-hero">Create your pictures</a>
+                    </div>
+                    </div>
+              </div>
+              <div class="carousel-item carousel-item-center">
+                <div class="gradient-border">
+                    <div class="bundle b2">
+                      <p class="txt-bundle">Bundle #2</p>
+                      <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                      <br>
+                      <p class="contains"><strong>Contains:</strong></p>
+                      <ul class="list-bundle">
+                          <li>20 Profile pictures</li>
+                          <li>20 Profile pictures</li>
+                          <li>20 Profile pictures</li>
+                          <li>20 Profile pictures</li>
+                      </ul>
+                          <a href="#" class="btn-hero">Create your pictures</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-item-center">
+                <div class="gradient-border">
+                    <div class="bundle b3">
+                          <p class="txt-bundle">Bundle #3</p>
+                          <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                          <br>
+                          <p class="contains"><strong>Contains:</strong></p>
+                      <ul class="list-bundle">
+                           <li>20 Profile pictures</li>
+                           <li>20 Profile pictures</li>
+                           <li>20 Profile pictures</li>
+                           <li>20 Profile pictures</li>
+                       </ul>
+                    <a href="#" class="btn-hero">Create your pictures</a>
+                   </div>
+                   </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span aria-hidden="true"><i class="fa-solid fa-chevron-left previous"></i></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span aria-hidden="true"><i class="fa-solid fa-chevron-right next"></i></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="fila">
+            <div class="gradient-border">
+            <div class="bundle b1">
+                <p class="txt-bundle">Bundle #1</p>
+                <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                <br>
+                <p class="contains"><strong>Contains:</strong></p>
+                <ul class="list-bundle">
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                </ul>
+                <a href="#" class="btn-hero">Create your pictures</a>
+            </div>
+            </div>
+            <div class="gradient-border">
+              <div class="bundle b2">
+                <p class="txt-bundle">Bundle #2</p>
+                <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                <br>
+                <p class="contains"><strong>Contains:</strong></p>
+                <ul class="list-bundle">
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                </ul>
+                    <a href="#" class="btn-hero">Create your pictures</a>
+                </div>
+            </div>
+            <div class="gradient-border">
+             <div class="bundle b3">
+                   <p class="txt-bundle">Bundle #3</p>
+                   <h2 class="ttl-bundle">$24.99 <del class="grey">$39.99</del></h2>
+                   <br>
+                   <p class="contains"><strong>Contains:</strong></p>
+               <ul class="list-bundle">
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                    <li>20 Profile pictures</li>
+                </ul>
+             <a href="#" class="btn-hero">Create your pictures</a>
+            </div>
+            </div>            
+        </div>
+    </div>
+</section>
+<section id="process">
+<div class="container-fluid">
+    <div class="row fila1">
+        <div class="col-12 col-lg-6 process1">
+            <h3>Our <b class="colored">process</b></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet.
+            </p>
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="hide-res">
+                <div class="accordion-item btn1">
+                  <h2 class="accordion-header" id=" flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <span class="gradText txt1">Payment</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item btn2">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span class="gradText txt2">Upload images</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item btn3">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="gradText txt3">AI training</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.
+                      </div>
+                    </div>
+                  </div>
+                <div class="accordion-item btn4">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="gradText txt4">Get images</span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.
+                    </div>
+                  </div>
+                </div>
+            </div>
+                <div class="show-res">
+                <div class="accordion-item btn1">
+                    <h2 class="accordion-header" id=" flush-headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <span class="gradText txt1">Payment</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta. <br> <br>
+                          <img class="img_process" src="./assets/tarjetas.jpg" alt="img_res">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item btn2">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <span class="gradText txt2">Upload images</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.<br> <br>
+                          <img class="img_process" src="./assets/tarjetas2.jpg" alt="img_res">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item btn3">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <span class="gradText txt3">AI training</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.<br> <br>
+                        <img class="img_process" src="./assets/tarjetas3.jpg" alt="img_res">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item btn4">
+                    <h2 class="accordion-header" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <span class="gradText txt4">Get images</span>
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente porro assumenda id qui, reprehenderit dolorem quasi ad obcaecati harum quas dicta.<br> <br>
+                          <img class="img_process" src="./assets/tarjetas4.jpg" alt="img_res">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-lg-6 hide-res">
+            <div class="process2"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 fila2 hide-res">
+            <p class="try">Try it now</p>
+            <p class="create">Create your perfect <b class="colored">profile picture</b></p>
+            <p class="with">with AI.</p>
+            <a href="#" class="btn-hero">Create your pictures</a>
+        </div>
+        <div class="col-12 fila2 show-res">
+            <p class="try">Try it now</p>
+            <p class="create">Create your perfect <b class="colored">profile picture with AI.</b></p>
+            <div class="gtAction"><a href="#" class="btn-hero">Create your pictures</a></div>
+        </div>
+    </div>
+</div>
+</section>
+<footer id="footer">
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-12 foot_1">
+                <img src="./assets/logo_2.svg" alt="logo_footer">
+            </div>
+        </div>
+        <div class="row show-res">
+            <div class="col-12 foot_3">
+                <p>Lorem ipsum dolor sit amet coiverra placerat lectus sed ac fames vitae eu metus.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 foot_2">
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#use_case">Use Case</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row hide-res">
+            <div class="col-12 foot_3">
+                <p>Lorem ipsum dolor sit amet consectetur. Sit quis amet sed luctus quis nunc semper aenean. Bibendum viverra placerat lectus sed ac fames vitae eu metus.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 foot_4">
+                <div class="foot div1 hide-res"></div>
+                <div class="social_media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="foot div2 hide-res"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="digital.js?ver=1.0.1"></script>
+</body>
+</html>
